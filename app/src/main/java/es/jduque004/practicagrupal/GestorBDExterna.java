@@ -32,8 +32,8 @@ public class GestorBDExterna extends AsyncTask<String,Void,String> {
         //if(strings.length!=0)param = "funcion="+strings[0]+"&"+strings[1];
         String line;
         StringBuilder result= new StringBuilder();
-        String st = "http://galan.ehu.eus/jduque004/WEB/DAS/usuarios.php";
-        if(elegirResult.equals("enviarFCM")) st = "http://galan.ehu.eus/jduque004/WEB/DAS/proyectofcm.php";
+        String st = "http://galan.ehu.eus/jduque004/WEB/DAS/JAM/gestorBD.php";
+        //if(elegirResult.equals("enviarFCM")) st = "http://galan.ehu.eus/jduque004/WEB/DAS/proyectofcm.php";
         try {
             URL targetURL = new URL(st);
             HttpURLConnection urlConnection= (HttpURLConnection) targetURL.openConnection();
