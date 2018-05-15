@@ -70,6 +70,7 @@
                 tools:ignore="MissingConstraints" />
 
             <TextView
+                android:id="@+id/TVcontraseña"
                 android:layout_width="106dp"
                 android:layout_height="16dp"
                 android:text="******"
