@@ -37,7 +37,7 @@ public class GestorBDExterna extends AsyncTask<String,Void,String> {
         try {
             URL targetURL = new URL(st);
             HttpURLConnection urlConnection= (HttpURLConnection) targetURL.openConnection();
-            urlConnection.setRequestMethod("POST");
+            urlConnection.setRequestMethod("POST"); //Hola
             urlConnection.setRequestProperty("Content-Type", "application/x-www-form-urlencoded");
             urlConnection.setConnectTimeout(5000);
             urlConnection.setReadTimeout(5000);
