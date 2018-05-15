@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context="es.jduque004.practicagrupal.Login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/m_Usuario"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/NombreUsuarioRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="53dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/m_Contraseña"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="121dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ContraseñaUsuarioRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/m_Contraseña2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="121dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/ContraseñaUsuarioRegistro2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="179dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/m_Registrarse"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="259dp"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>

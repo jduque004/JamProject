@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="red1">#FF0000</color>
+    <color name="red2">#FF4000</color>
+    <color name="red3">#FF8000</color>
+
+    <color name="blue1">#08088A</color>
+    <color name="blue2">#0174DF</color>
+    <color name="blue3">#848484</color>
+
+    <color name="green1">#088A4B</color>
+    <color name="green2">#01DF3A</color>
+    <color name="green3">#2EFEF7</color>
+
+    <color name="neo1">#8a5408</color>
+    <color name="neo2">#dc9cec</color>
+    <color name="neo3">#eaeca7</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+
+</resources>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    tools:context="es.jduque004.practicagrupal.Receta">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="169dp"
+                android:src="@drawable/defaultprofile"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="0dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m_NombrePlato"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="187dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TVnombrePlato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m_DescripcionPlato"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="227dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TVDescripcionPlato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="2dp"
+                tools:layout_editor_absoluteY="247dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m_IngredientesPlato"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="267dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TVIngredientesPlato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="287dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m_RecetaPlato"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="307dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/TVRecetaPlato"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="327dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/m_Nota"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="307dp"
+                tools:ignore="MissingConstraints" />
+
+            <EditText
+                android:id="@+id/NotaNueva"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="53dp"
+                tools:ignore="MissingConstraints" />
+
+
+            <Button
+                android:id="@+id/btnAñadirPlato"
+                android:layout_width="138dp"
+                android:layout_height="40dp"
+                android:text="@string/m_Añadir"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteX="230dp"
+                tools:layout_editor_absoluteY="387dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

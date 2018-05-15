@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context="es.jduque004.practicagrupal.Menu">
+
+
+    <Button
+        android:id="@+id/btnRecetas"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:baselineAligned="false"
+        android:text="@string/m_Recetas"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/btnPerfil"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/m_Perfil"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/btnCalendario"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/m_Calendario"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/btnAlta"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/m_Alta"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="125dp" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:text="@string/m_Salir"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="125dp"
+        />
+
+
+</LinearLayout>
