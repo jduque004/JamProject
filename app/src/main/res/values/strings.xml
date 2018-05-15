@@ -62,6 +62,7 @@
     <string name="m_IngredientesPlato">dishIngredients</string>
     <string name="m_RecetaPlato">dishRecipe</string>
     <string name="m_Añadir">Add</string>
+    <string name="m_RellenarCampos">You must fill all the fields</string>
 
 
 </resources>

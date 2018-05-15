@@ -43,12 +43,13 @@
     <string name="m_Nombre">Tu nombre:</string>
     <string name="m_Estilo">Tu estilo:</string>
     <string name="m_DadoDeAlta">Suscrito:</string>
-    <string name="m_Direccion">Adress:</string>
-    <string name="m_Localizacion">Map:</string>
+    <string name="m_Direccion">Dirección:</string>
+    <string name="m_Localizacion">Mapa:</string>
     <string name="m_Pass">Tu contraseña:</string>
     <string name="m_NombrePlato">Plato:</string>
     <string name="m_DescripcionPlato">Descripcion:</string>
     <string name="m_IngredientesPlato">Ingredientes:</string>
     <string name="m_RecetaPlato">Receta:</string>
     <string name="m_Añadir">Añadir</string>
+    <string name="m_RellenarCampos">Debes rellenar todos los campos</string>
 </resources>

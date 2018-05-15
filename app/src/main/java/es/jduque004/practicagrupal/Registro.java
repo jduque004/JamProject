@@ -58,35 +58,39 @@ public class Registro extends AppCompatActivity implements View.OnClickListener{
                 String nombre = NombreUsuarioRegistro.getText().toString();
                 String contraseña = ContraseñaUsuarioRegistro.getText().toString();
                 String contraseña2 = ContraseñaUsuarioRegistro2.getText().toString();
-
-                if (!contraseña.equals(contraseña2)) {
-                    Toast alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_Contraseñas), Toast.LENGTH_SHORT);
+                if(nombre.equals("")||contraseña.equals("")||contraseña2.equals("")){
+                    Toast alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_RellenarCampos), Toast.LENGTH_SHORT);
                     alerta.show();
-                }
-                if(nombre.isEmpty())Toast.makeText(getApplicationContext(), this.getString(R.string.m_NombreVacio), Toast.LENGTH_SHORT).show();
+                }else{
+                    if (!contraseña.equals(contraseña2)) {
+                        Toast alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_Contraseñas), Toast.LENGTH_SHORT);
+                        alerta.show();
+                    }
+                    //if(nombre.isEmpty())Toast.makeText(getApplicationContext(), this.getString(R.string.m_NombreVacio), Toast.LENGTH_SHORT).show();
 
-                try {
-                    PHP php = new PHP(nombre);
-                    String json = php.execute().get();
-                    System.out.print(json);
-                    String prueba= "\"Nombre\":\"" + nombre +'"';
+                    try {
+                        PHP php = new PHP(nombre);
+                        String json = php.execute().get();
+                        System.out.print(json);
+                        String prueba= "\"Nombre\":\"" + nombre +'"';
 
-                if (json.indexOf(prueba)>=0) {
-                    Toast alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_NombreCogido), Toast.LENGTH_SHORT);
-                    alerta.show();
-                } else {
-                    PHP2 php2 = new PHP2(nombre,contraseña);
-                    php2.execute();
-                    //Usuario usuarioRegistrado = new Usuario(nombre, contraseña);
-                    //db.insertar(usuarioRegistrado);
-                    startActivity(new Intent(this, Login.class));
-                }
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                } catch (ExecutionException e) {
-                    e.printStackTrace();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
+                        if (json.indexOf(prueba)>=0) {
+                            Toast alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_NombreCogido), Toast.LENGTH_SHORT);
+                            alerta.show();
+                        } else {
+                            PHP2 php2 = new PHP2(nombre,contraseña);
+                            php2.execute();
+                            //Usuario usuarioRegistrado = new Usuario(nombre, contraseña);
+                            //db.insertar(usuarioRegistrado);
+                            startActivity(new Intent(this, Login.class));
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    } catch (ExecutionException e) {
+                        e.printStackTrace();
+                    } catch (MalformedURLException e) {
+                        e.printStackTrace();
+                    }
                 }
                 break;
         }
