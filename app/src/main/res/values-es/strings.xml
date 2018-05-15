@@ -52,4 +52,8 @@
     <string name="m_RecetaPlato">Receta:</string>
     <string name="m_Añadir">Añadir</string>
     <string name="m_RellenarCampos">Debes rellenar todos los campos</string>
+    <string name="m_ModificacionCorrecta">Modificación correcta</string>
+    <string name="m_SacarFoto">Sacar foto</string>
+    <string name="m_Galeria">Elegir de la galería</string>
+    <string name="m_ModificarImagen">Modificar imagen</string>
 </resources>

@@ -15,6 +15,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.io.ByteArrayOutputStream;
 import java.net.MalformedURLException;
@@ -125,6 +126,7 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
+        Toast alerta;
         switch (view.getId()) {
             case R.id.btnModificarEstilo:
                 showDialog();
@@ -149,6 +151,8 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
                 /*
                 String json = new GestorBDExterna(this).execute("modificarNombre",nombre="+name).get();
                 */
+                alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_ModificacionCorrecta), Toast.LENGTH_SHORT);
+                alerta.show();
                 nombreUsuario = name;
                 break;
             case R.id.btnModificarContraseña:
@@ -156,12 +160,16 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
                 /*
                 String json = new GestorBDExterna(this).execute("modificarContraseña","nombre="+name+"&contraseña="+pass).get();
                 */
+                alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_ModificacionCorrecta), Toast.LENGTH_SHORT);
+                alerta.show();
                 break;
             case R.id.btnModificarDireccion:
                 String dir = textView5.getText().toString();
                 /*
                 String json = new GestorBDExterna(this).execute("modificarDireccion","nombre="+name+"&direccion="+dir).get();
                 */
+                alerta = Toast.makeText(getApplicationContext(), this.getString(R.string.m_ModificacionCorrecta), Toast.LENGTH_SHORT);
+                alerta.show();
                 break;
             case R.id.btnModificarLocalizacion:
                 break;
@@ -227,20 +235,20 @@ public class Perfil extends AppCompatActivity implements View.OnClickListener {
 
     private void showImageDialog(){
         final CharSequence[] items = new CharSequence[3];
-        items[0] = "Sacar Foto";
-        items[1] = "Elegir de Galería";
-        items[2] = "Cancelar";
+        items[0] = this.getString(R.string.m_SacarFoto);
+        items[1] = this.getString(R.string.m_Galeria);
+        items[2] = this.getString(R.string.m_Cancelar);
         new AlertDialog.Builder(this)
-                .setTitle("Subir imagen")
+                .setTitle(R.string.m_ModificarImagen)
                 .setItems(items, new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        if(items[i].equals("Sacar Foto")){
+                        if(items[i].equals(R.string.m_SacarFoto)){
                             Intent pictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                             if(pictureIntent.resolveActivity(getPackageManager()) != null){
                                 startActivityForResult(pictureIntent, 1234);
                             }
-                        }else if(items[i].equals("Elegir de Galería")){
+                        }else if(items[i].equals(R.string.m_Galeria)){
                             Intent galeryIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
                             startActivityForResult(galeryIntent, 4567);
                         }else{

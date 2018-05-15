@@ -63,6 +63,10 @@
     <string name="m_RecetaPlato">dishRecipe</string>
     <string name="m_Añadir">Add</string>
     <string name="m_RellenarCampos">You must fill all the fields</string>
+    <string name="m_ModificacionCorrecta">Correct modification</string>
+    <string name="m_SacarFoto">Take a picture</string>
+    <string name="m_Galeria">Choose from gallery</string>
+    <string name="m_ModificarImagen">Modify image</string>
 
 
 </resources>
